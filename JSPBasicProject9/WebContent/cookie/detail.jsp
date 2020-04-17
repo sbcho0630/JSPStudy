@@ -36,12 +36,10 @@ https://developers.google.com/chart/interactive/docs/gallery/piechart --%>
           ['Sleep',    7]
         ]); */
         var data = google.visualization.arrayToDataTable(<%=vo.getTag()%>);
-
         var options = {
           title: '리뷰 통계',
           is3D: true,
         };
-
         var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
         chart.draw(data, options);
       }
@@ -118,20 +116,3 @@ https://developers.google.com/chart/interactive/docs/gallery/piechart --%>
 	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

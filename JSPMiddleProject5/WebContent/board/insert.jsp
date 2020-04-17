@@ -17,6 +17,20 @@ h2 {
 	text-align: center;
 }
 </style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript">
+var index=2;
+$(function(){
+	$('#add').click(function(){
+		$('#user-table').append(
+		    '<tr>'
+		  + '<td>'
+		  + '파일 '+(index)+':'
+		  + '<input type=file id="f'+(index)+'" size=20>'
+		)
+	})	
+})
+</script>
 </head>
 <body>
 	<div class="container">
